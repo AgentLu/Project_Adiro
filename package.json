@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "adiro": "dead-server --host=localhost --port=8000",
+    "dev": "dead-server --host=localhost --port=8000",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
