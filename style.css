@@ -18,10 +18,10 @@
 }
 @keyframes changer{
     from{
-      background-image: url(./img/Adiro.jpg);
+      background-image: url(./img/Adiro1.jpg);
     }
     20%{
-      background-image: url(./img/Adiro.jpg);
+      background-image: url(./img/Adiro1.jpg);
     }
     40%{
       background-image: url(./img/Adiro2.jpg);
