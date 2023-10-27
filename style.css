@@ -10,11 +10,59 @@
 .container {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.01),transparent),url("img/adiro.jpg");
-    background-position: center;
-    background-size: cover;
     padding: 0 8%;
+    background-position: top;
+    background-size: cover;
     position: relative;
+    animation: changer 35s infinite;
+}
+@keyframes changer{
+    from{
+      background-image: url(./img/Adiro.jpg);
+    }
+    20%{
+      background-image: url(./img/Adiro.jpg);
+    }
+    40%{
+      background-image: url(./img/Adiro2.jpg);
+    }
+    60%{
+        background-image: url(./img/Adiro3.jpg);
+      }
+    80%{
+        background-image: url(./img/Adiro5.jpg);
+      }
+    to{
+      background-image: url(./img/Adiro6.jpg);
+    }
+ }
+.text-box-about{
+    width: 70%;
+    height: 70%;
+    position: relative;
+    margin: auto;
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.text-only{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    letter-spacing: 3px;
+    color: #000000;
+    opacity: 1;
+}
+.text-only h1{
+    margin-bottom: 20px;
+}
+.video{
+    width: 800px;
+    height: 400px;
+    padding: 30px;
+    position: relative;
+    margin: auto;
 }
 nav{
     display: flex;
@@ -22,7 +70,6 @@ nav{
     align-items: center;
     flex-wrap: wrap;
     padding: 5px 0;
-
 }
 .logo {
     width: 140px;
@@ -40,8 +87,9 @@ nav ul li{
     margin: 10px 30px;
 }
 nav ul li a{
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
+    font-size: 18px;
 }
 nav ul li a::after{
     content: '';
@@ -56,7 +104,7 @@ nav ul li a:hover::after{
     width: 95%;
 }
 .text-box{
-    color:#000000;
+    color:#201920;
     position: absolute;
     top: 20%;
     right: 55%;
@@ -67,9 +115,11 @@ nav ul li a:hover::after{
     font-weight: bold;
     font-style: italic;
     letter-spacing: 7px;
-    color: #000000;
+    color:#000000;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #fa00fa;
     opacity: 1;  
-    animation: fadeIn 4s ease-in; 
+    animation: fadeIn 1s ease-in; 
 }
 @keyframes fadeIn {  
     from {  
@@ -87,9 +137,11 @@ nav ul li a:hover::after{
     font-style: italic;
     line-height: 360px;
     letter-spacing: 7px;
-    color: #000000;
+    color:#000000;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #35c6ff;
     margin-left: 60px;
-    animation: fadeIn 8s ease-in; 
+    animation: fadeIn 1s ease-in; 
 }
 @keyframes fadeIn {  
     from {  
@@ -107,8 +159,10 @@ nav ul li a:hover::after{
     font-style: italic;
     letter-spacing: 7px;
     margin-left: 120px;
-    color: #000000;
-    animation: fadeIn 12s ease-in; 
+    color:#000000;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #fa00fa;
+    animation: fadeIn 1s ease-in; 
 }
 @keyframes fadeIn {  
     from {  
@@ -221,8 +275,8 @@ nav ul li a:hover::after{
     justify-content: center;
     align-items: center;
     margin: auto;
-    width: 600px;
-    height: 650px;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
     object-position: center;
   }
