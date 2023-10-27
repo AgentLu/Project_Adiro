@@ -18,22 +18,39 @@
 }
 @keyframes changer{
     from{
-      background-image: url(./img/Adiro1.jpg);
+    background-image: url(./img/Adiro1.jpg);
+    background-position: top;
+    background-size: 100%;
     }
-    20%{
-      background-image: url(./img/Adiro1.jpg);
+    15%{
+        background-image: url(./img/Adiro1.jpg);
+        background-position: top;
+        background-size: 100%;
+        }
+    30%{
+    background-image: url(./img/Adiro2.jpg);
+    background-position: top;
+    background-size: 100%;
     }
-    40%{
-      background-image: url(./img/Adiro2.jpg);
+    45%{
+    background-image: url(./img/Adiro3.jpg);
+    background-position: center;
+    background-size: 100%;
     }
     60%{
-        background-image: url(./img/Adiro3.jpg);
+    background-image: url(./img/Adiro5.jpg);
+    background-position: center;
+    background-size: 100%;
       }
-    80%{
-        background-image: url(./img/Adiro5.jpg);
+    85%{
+    background-image: url(./img/Adiro6.jpg);
+    background-position: center;
+    background-size: 100%;
       }
     to{
-      background-image: url(./img/Adiro6.jpg);
+    background-image: url(./img/Adiro1.jpg);
+    background-position: top;
+    background-size: 100%;
     }
  }
 .text-box-about{
@@ -46,6 +63,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    
 }
 .text-only{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -87,9 +105,10 @@ nav ul li{
     margin: 10px 30px;
 }
 nav ul li a{
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 22px;
+    font-weight: 500;
 }
 nav ul li a::after{
     content: '';
@@ -174,6 +193,7 @@ nav ul li a:hover::after{
     }  
 }
 .row2{
+    padding: 30px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
